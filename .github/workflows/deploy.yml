@@ -26,8 +26,9 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          mv dist/* ./
-          mv dist/.* ./
+          # Move contents of dist to the root of the repository
+          mv dist/* .
+          mv dist/.* .
           rm -rf dist
           touch .nojekyll
           git config --global user.name 'github-actions[bot]'
