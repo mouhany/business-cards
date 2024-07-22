@@ -17,7 +17,7 @@ function App() {
         sleep: 9,
         affection: 8,
       },
-      pic: "src/assets/bowie.JPG",
+      pic: "assets/bowie.JPG",
     },
     {
       name: "Tombi",
@@ -31,7 +31,7 @@ function App() {
         sleep: 7,
         affection: 10,
       },
-      pic: "src/assets/tombi.JPG",
+      pic: "assets/tombi.JPG",
     },
     {
       name: "Miu",
@@ -45,7 +45,7 @@ function App() {
         sleep: 9,
         affection: 9,
       },
-      pic: "src/assets/miu.JPG",
+      pic: "assets/miu.JPG",
     },
     {
       name: "Nana",
@@ -59,7 +59,7 @@ function App() {
         sleep: 7,
         affection: 7,
       },
-      pic: "src/assets/nana.JPG",
+      pic: "assets/nana.JPG",
     },
     {
       name: "Sapi",
@@ -73,7 +73,7 @@ function App() {
         sleep: 7,
         affection: 9,
       },
-      pic: "src/assets/sapi.JPG",
+      pic: "assets/sapi.JPG",
     },
     {
       name: "Otam",
@@ -87,7 +87,7 @@ function App() {
         sleep: 7,
         affection: 9,
       },
-      pic: "src/assets/otam.JPG",
+      pic: "assets/otam.JPG",
     },
   ];
 
