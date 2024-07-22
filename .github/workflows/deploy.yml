@@ -26,10 +26,12 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          # Move contents of dist to the root of the repository
-          mv dist/* .
-          mv dist/.* .
-          rm -rf dist
+          # Create a temporary directory for deployment
+          mkdir -p temp_deploy
+          cp -r dist/* temp_deploy/
+          cp -r dist/.* temp_deploy/ || true
+          cp -r temp_deploy/* ./
+          rm -rf dist temp_deploy
           touch .nojekyll
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
