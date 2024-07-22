@@ -57,7 +57,7 @@ function App() {
         appetite: 7,
         speed: 10,
         sleep: 7,
-        affection: 6,
+        affection: 7,
       },
       pic: "src/assets/nana.JPG",
     },
@@ -92,8 +92,8 @@ function App() {
   ];
 
   return (
-    <div className="snap-mandatory snap-y h-screen overflow-y-scroll flex flex-col md:flex-row md:flex-wrap items-center justify-center ">
-      <div className="mix-blend-overlay flex flex-row justify-center gap-3 fixed top-2 lg:text-3xl">
+    <div className="snap-mandatory snap-y min-h-screen md:h-screen overflow-y-scroll flex flex-col md:flex-row md:flex-wrap items-center justify-center ">
+      <div className="text-stone-600 opacity-50 flex flex-row justify-center gap-3 fixed top-2 text-xl md:text-2xl lg:text-3xl">
         <FontAwesomeIcon icon={faPaw} />
         Purrofessional Business Cards!
         <FontAwesomeIcon icon={faPaw} />
@@ -101,7 +101,7 @@ function App() {
       {profiles.map((profile, index) => (
         <Cards data={profile} key={index} />
       ))}
-      <footer className="fixed bottom-2 text-sm text-stone-300">
+      <footer className="text-stone-600 opacity-20 fixed bottom-2 text-xs">
         Copyright © 2024, Mouhany.
       </footer>
     </div>
